@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Trang chủ</title>
+        <link rel="icon" href="images/favicon.ico" >      
+    </head>
+
+    <body>
+        <header id="iconnn">
+            <img src="images/logo.png" >
+            <nav>
+                <a href="trangchu.html">Trang Chủ </a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a> 
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng Nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>    
+            </nav>
+        </header>
+
+        <main>
+            <h1>Liên hệ</h1>
+            <img src="images/lienhe/check-in.png">
+            <h2>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</h2>
+            <p>
+                Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện 
+                tử hoặc sử dụng biểu mẫu bên dưới. Xin cám ơn.
+            </p>
+            <fieldset>
+                <legend style="font-size: 30px; font-weight: bold;" > Góp ý </legend>
+                <form action="dangnhap.html" method="post" enctype="application/x-www-form-urlencoded" action="create_user">
+                    <img src="images/dangnhap/userlogin.png" height="250px">
+                    <table> 
+                        <tr>
+                            <td>
+                                <label for="ho_ten"><b>Họ Tên:</b></label>
+                            </td>
+                            <td>
+                                <input type="password" id="ho_ten" placeholder="Vui lòng nhập Họ tên của bạn" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email"><b>Email:</b></label>
+                            </td>
+                            <td>
+                                <input type="text" id="email" placeholder="Vui lòng nhập địa chỉ Email" >
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <label for="chu_de"> <b>Chủ đề</b>  </label>
+                            </td>
+                            <td>
+                                <select name="chu_de" id="">
+                                    <option value="sp/dv">Về Sản Phẩm/ Dịch Vụ</option>
+                                    <option value="uu_dai_tv">Về Ưu Đãi Thành Viên</option>
+                                    <option value="tuyen_dung">về Tính Tuyển Dụng</option>
+                                </select>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td>
+                                <label for="noi_dung"><b>Nội dung:</b></label>  
+                            </td>                                                        
+                        </tr>           
+                       <tr>
+                            <td colspan="2">
+                                <textarea id="noi_dung" rows="7" cols="50" placeholder="Nội dung cần liên hệ"></textarea>
+                            </td>
+                       </tr>
+                       <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Gửi">
+                            </td>
+                       </tr>
+                    </table>                
+                    
+                </form>
+            </fieldset>
+        </main>
+
+        <footer>            
+            <p> 
+                &#169 2021 Bản quyền thuộc về FreeezeVN. 
+                <a href="facebook.com">facebook</a>
+                <a href="x.com">twitter</a>
+                <a href="pinterest.com">pinterest</a>           
+                <a href="#iconnn">Về Đầu Trang</a>
+            </p>
+        </footer>
+    </body>
+</html>

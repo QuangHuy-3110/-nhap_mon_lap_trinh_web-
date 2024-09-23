@@ -1,0 +1,123 @@
+header {
+    background-image: url(TH_B2_Data/header.png);
+    height: 100px;
+    margin: auto;    
+}
+
+#banner {
+    height: 36px;
+}
+
+header #head-1{
+    height: 100px;
+    position: absolute;
+    top: -30px;    
+    animation-name: key-1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes key-1 {
+    from {left: 80%;}
+    to {left: 30%;}
+}
+
+body{
+    width: 1024px;
+    margin: auto;
+}
+
+header #head-2{
+    height: 70px;
+    position: absolute;
+    top: -5px;
+    animation-name: key-2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes key-2 {
+    from {left: 80%;}
+    to {left: 45%;}
+}
+
+header #head-3{
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    animation-name: key-3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes key-3 {
+    from {left: 80%;}
+    to {left: 63%;}
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a{
+    float: left;
+    border: 1px solid white;
+    padding: 2px 4px;
+    margin-left: 3px;
+    height: 20px;
+    text-align: center;
+    color: #ed4190;
+    font-size: 17px;
+    background-color: #ffff80;
+    text-decoration: none;  
+    border-radius: 10px;  
+}
+ 
+header nav a:hover {
+    color: #fff;
+    background-color: #ed4190;
+}
+
+header .icon_search{
+    padding-top: 3px;
+    float: right;
+}
+
+.icon, .icon_cart{
+    padding: 4px;
+    min-width: 30px;
+    color: white;
+    background-color: #cddc39;
+}
+
+.icon_cart{
+    color: #ed4190;
+}
+
+footer {
+    margin-top: 2px;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0px 5px;
+    /* color: white; */
+    text-align: center;
+}
+
+footer > a[href="#icon_top"]{
+    right: 10px;
+    bottom: 5px;
+    padding: 10px;
+    position: fixed;
+    z-index: 100px;
+    color: #ed4190;
+    
+}
+
+footer a{
+    color: #ed4190;
+    text-decoration: none;
+}
+
+.icon_top img{
+    width: 50px;
+}
