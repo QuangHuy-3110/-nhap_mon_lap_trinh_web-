@@ -100,16 +100,13 @@ footer {
     border-radius: 5px;
     padding: 0px 5px;
     /* color: white; */
+    position: relative;
     text-align: center;
 }
 
 footer > a[href=".return_to_head"]{
-    right: 10px;
-    bottom: 5px;
-    position: fixed ;
-    color: #ed4190;
-    padding: 10px;    
-    z-index: 100px;   
+    
+    
     
 }
 
@@ -120,6 +117,12 @@ footer a{
 
 .return_to_head img{
     width: 50px;
+    position: fixed ;
+    z-index: 100px;   
+    right: 10px;
+    bottom: 5px;    
+    color: #ed4190;
+    padding: 10px;    
 }
 
 h1 {
