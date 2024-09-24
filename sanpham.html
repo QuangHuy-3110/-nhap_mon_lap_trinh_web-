@@ -3,12 +3,14 @@
     <head>
         <meta charset="UFT-8">
         <title>Sản phẩm</title>
-        <link rel="icon" href="images/favicon.ico" >      
+        <link rel="icon" href="images/favicon.ico">      
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
-        <header id="iconnn">
-            <img src="images/logo.png">
+        <header>                    
+            <img src="images/logo.png" id="banner"> 
             <nav>
                 <a href="trangchu.html">Trang Chủ </a>
                 <a href="gioithieu.html">Giới Thiệu</a>
@@ -17,13 +19,23 @@
                 <a href="dangnhap.html">Đăng Nhập</a>
                 <a href="dangky.html">Đăng Ký</a>
                 <a href="lienhe.html">Liên Hệ</a>    
-            </nav>
+            </nav>            
+            
+            <img id="head-1" src="TH_B2_Data/header-img1.png">
+            <img id="head-2" src="TH_B2_Data/header-img2.png">
+            <img id="head-3" src="TH_B2_Data/header-img3.png">
+            <div class="icon_search">
+                <input class="search" type="text" placeholder="Nhập nội dung tìm kiếm">
+                <a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="icon_cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>            
         </header>
 
         <main>
-            <article>
-                <h1>Sản Phẩm Truyền Thống</h1>
+            <article>  
+                <h1>Sản Phẩm Truyền Thống</h1>              
                 <section>
+                    
                     <div>
                         <img src="images/sanpham/kiwi.jpg">
                         <h2>Sữa Chua Vị Kiwi</h2>                
@@ -42,7 +54,6 @@
                             </p>
                         </span>
                     </div>
-
                     <div>
                         <img src="images/sanpham/mango.jpg">
                         <h2>Sữa Chua Vị Xoài</h2>                
@@ -60,7 +71,6 @@
                             </p>     
                         </span>
                     </div>
-
                     <div>
                         <img src="images/sanpham/cantaloupe.jpg">
                         <h2>Sữa Chua Vị Dưa lưới</h2>                
@@ -78,7 +88,10 @@
                             </p>    
                         </span>
                     </div>
-
+                </section>     
+                <h1>Sản Phẩm Mới</h1>              
+                <section> 
+                                    
                     <div>
                         <img src="images/sanpham/blackberry.jpg">
                         <h2>Sữa Chua Vị Mâm Xôi</h2>                
@@ -97,7 +110,6 @@
                             </p>    
                         </span>
                     </div>
-
                     <div>
                         <img src="images/sanpham/strawberry.jpg">
                         <h2>Sữa Chua Vị Dâu Tây</h2>                
@@ -115,7 +127,6 @@
                             </p>    
                         </span>
                     </div>
-
                     <div>
                         <img src="images/sanpham/blueberry.jpg">
                         <h2>Sữa Chua Vị Việt Quất</h2>                
@@ -133,9 +144,10 @@
                             </p>   
                         </span>
                     </div>
-
-                    <h1>Sản Phẩm Trái Cây</h1>
-
+                </section>
+                <h1>Sản Phẩm Trái Cây miền nhiệt đới</h1>
+                <section>
+                    
                     <div>
                         <img src="images/sanpham/grapes.jpg">
                         <h2>Sữa Chua Vị Bưởi</h2>                
@@ -171,7 +183,6 @@
                             </p>    
                         </span>
                     </div>
-
                     <div>
                         <img src="images/sanpham/pineapple.jpg">
                         <h2>Sữa Chua Vị Dứa</h2>                
@@ -188,28 +199,19 @@
                             </p>
                         </span>
                     </div>
-
                 </section>
                               
-            </article>
+            </article>            
         </main>
 
         <footer>
-            <h1>Đặt Hàng Ngay</h1>
-                <img src="images/trangchu/order_1.png" height="150px">
-                <p>Gọi Điện</p>
-                <img src="images/trangchu/order_2.png" height="150px">
-                <p>Đặt Hàng</p>
-                <img src="images/trangchu/order_3.png" height="150px">
-                <p>Nhận Hàng</p>  
-                <img src="images/trangchu/order_4.png" height="150px">
-                <p>Thanh Toán</p>
+            
                 <p>
                     &#169 2021 Bản quyền thuộc về FreeezeVN. 
-                    <a href="facebook.com">facebook</a>
-                    <a href="x.com">twitter</a>
-                    <a href="pinterest.com">pinterest</a>           
-                    <a href="#iconnn">Về Đầu Trang</a>
+                    <a class="icon_4mor" href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="icon_4mor" href="x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a class="icon_4mor" href="pinterest.com"><i class="fa-brands fa-pinterest"></i></a>           
+                    <a class="return_to_head " href="#banner"><img src="TH_B2_Data/top.png" alt=""></a>
                 </p>
         </footer>
     </body>
