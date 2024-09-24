@@ -104,12 +104,6 @@ footer {
     text-align: center;
 }
 
-footer > a[href=".return_to_head"]{
-    
-    
-    
-}
-
 footer a{
     color: #ed4190;
     text-decoration: none;
@@ -266,6 +260,5 @@ section > div > span{
     width: 100%;
     color: #000;
     text-align: center;
-    max-lines: 2;
     max-lines: 2;
 }
