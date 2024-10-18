@@ -6,6 +6,7 @@
         <link rel="icon" href="images/favicon.ico">      
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="constrain.js"></script>
     </head>
 
     <body>
@@ -27,7 +28,7 @@
             <div class="icon_search">
                 <input class="search" type="text" placeholder="Nhập nội dung tìm kiếm">
                 <a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a class="icon_cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="icon_cart" onclick="move_donhang()"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>            
         </header>
 
@@ -49,8 +50,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="001" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('001')">Đặt hàng</button>
                             </p>
                         </span>
                     </div>
@@ -66,8 +67,8 @@
                         <span>
                             <p >
                                 Số lượng:        
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="002" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('002')">Đặt hàng</button>
                             </p>     
                         </span>
                     </div>
@@ -83,8 +84,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="003" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('003')">Đặt hàng</button>
                             </p>    
                         </span>
                     </div>
@@ -105,8 +106,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="004" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('004')">Đặt hàng</button>
                             </p>    
                         </span>
                     </div>
@@ -122,8 +123,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="005" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('005')">Đặt hàng</button>
                             </p>    
                         </span>
                     </div>
@@ -139,8 +140,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="006" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('006')">Đặt hàng</button>
                             </p>   
                         </span>
                     </div>
@@ -160,8 +161,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="007" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('007')">Đặt hàng</button>
                             </p>    
                         </span>
                     </div>
@@ -178,8 +179,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="008" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('008')">Đặt hàng</button>
                             </p>    
                         </span>
                     </div>
@@ -194,8 +195,8 @@
                         <span>
                             <p >
                                 Số lượng:         
-                                <input type="text" name="soluong" max="100" min="0" size="3" value="0">
-                                <button>Đặt hàng</button>
+                                <input type="text" id="009" name="soluong" max="100" min="0" size="3" value="0">
+                                <button onclick="addcart('009')">Đặt hàng</button>
                             </p>
                         </span>
                     </div>
@@ -214,5 +215,6 @@
                     <a class="return_to_head " href="#banner"><img src="TH_B2_Data/top.png" alt=""></a>
                 </p>
         </footer>
+        <!-- <script src="constrain.js"></script> -->
     </body>
 </html>
