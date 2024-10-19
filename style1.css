@@ -184,3 +184,8 @@ label {
     text-transform: uppercase;
     color: rgb(2, 0, 1);
 }
+
+.Buy{
+    font-weight: bold;
+    font-size: 20px;
+}
