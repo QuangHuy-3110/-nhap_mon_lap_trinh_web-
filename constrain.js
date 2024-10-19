@@ -63,11 +63,19 @@ function int_to_tring (a){
 }
 
 
-function addcart (e) {
-    
+function addcart (e) {    
     if(typeof localStorage[e] === "undefined"){
         number = parseInt(document.getElementById(e).value);
         window.localStorage.setItem(e, number);
+        if (number <= 0){
+            window.localStorage.setItem(e, 1);
+            Swal.fire({
+                title: 'Oh!',
+                text: 'Số lượng sản phẩm quá ít, bạn sẽ lấy 1 sản phẩm?',
+                icon: 'question', // Có thể là 'success', 'error', 'warning', 'info', hoặc 'question'
+                confirmButtonText: 'OK'
+            });
+        }
     }
     else {
         number = parseInt(document.getElementById(e).value);
@@ -75,8 +83,15 @@ function addcart (e) {
         total = number + current;
         if (total > 100){
             window.localStorage.setItem(e, 100);
-            alert(`san pham ${e} da dat qua 100 san pham!`);
+            Swal.fire({
+                title: 'Oh!',
+                text: 'Số lượng sản phẩm vượt quá mức cho phép, bạn sẽ lấy 100 sản phẩm?',
+                icon: 'question', // Có thể là 'success', 'error', 'warning', 'info', hoặc 'question'
+                confirmButtonText: 'OK'
+            });
         }
+
+        
         else{
             window.localStorage.setItem(e, total);
         }
