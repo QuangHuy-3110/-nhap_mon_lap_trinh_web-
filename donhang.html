@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UFT-8">
-        <title>donhang</title>
+        <title>Đơn hàng</title>
         <link rel="icon" href="images/favicon.ico">      
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="style1.css" type="text/css">
@@ -32,24 +32,41 @@
             </div>            
         </header>
 
-        <main>
-            <div >
-                <table>
+        <main>            
+            <div id="cart">
+                <h2>Giỏ hàng:</h2>
+                <br>
+                <label>
+                    select all 
+                    <input type="checkbox" class="checkbox" id="check_all" onclick="check_all()">
+                    
+                </label>
+                
+                <table id="CartDetail"> 
                     <thead>
+                        <th>Chọn</th>
                         <th>Hình</th>
-                        <th>Tên SP</th>
-                        <th>Số lượng</th>   
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
                         <th>Giá</th>
-                        <th>Thành tiền</th>
-                        <th></th>
+                        <th>Xóa</th>
                     </thead>
                     <tbody id="tbdy">
                     </tbody>
-                    <tfoot>
-                        <td colspan="5">Tổng thành tiền</td>
-                    </tfoot>
                 </table>
+                
             </div>
+            <aside >  
+                <h2>Thông tin đơn hàng:</h2>              
+                <div id="count">
+                </div>
+                </aside>
+            </aside>
+
+            <aside>
+
+            </aside>
         </main>
 
         <footer>
