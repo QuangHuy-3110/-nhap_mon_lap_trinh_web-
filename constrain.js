@@ -104,15 +104,17 @@ function addcart (e) {
 
 function show_cart() {
     let total = 0;
+    let tbody = document.getElementById("tbdy");
+    tbody.innerHTML = "";
     for (let key in localStorage){
         console.log(key);
-        item = itemList[key];
-        photo = item.photo;
-        name = item.name;
-        price = item.price;
-        orderNumber = localStorage.getItem(key);
+        let item = itemList[key];
+        let photo = item.photo;
+        let name = item.name;
+        let price = item.price;
+        let orderNumber = localStorage.getItem(key);
 
-        let tbody = document.getElementById("tbdy");
+        // let tbody = document.getElementById("tbdy");
 
         let tr = document.createElement("tr", id=`tr_${key}`);
 
@@ -146,17 +148,19 @@ function show_cart() {
 
         tbody.append(tr);
     }
+
 }
+
 
 function change_number (key){
     let div_count = document.getElementById("count");
     div_count.innerHTML = `<p>Vui lòng chọn sản phẩm trong giỏ hàng!</p>`;
     let check = document.getElementById("check_all");
-    check.checked = false;
+    check.checked = false;   
+
     number = parseInt(document.getElementById(`${key}_new`).value);
     if (number > 100){
         window.localStorage.setItem(key, 100);
-        alert(`Sản phẩm ${itemList[key].name} đã đặt quá 100 sản phẩm!`);
     }
     else{
         window.localStorage.setItem(key, number);
@@ -170,7 +174,7 @@ function change_number (key){
 
 let total = 0;
 function update_total1(key){
-    checkBox = document.getElementById(`box_${key}`);
+    let checkBox = document.getElementById(`box_${key}`);
     if(checkBox.checked === true){
         total += count_price(key);
     }
@@ -191,7 +195,6 @@ function update_total1(key){
     else if(localStorage.length !== 0) {
         div_count.innerHTML = `<p>Vui lòng chọn sản phẩm trong giỏ hàng!</p>`;
     }
-
 }
 
 function check_all(){    
@@ -258,12 +261,18 @@ function display_cart() {
 }
 
 display_cart();
+window.onstorage = () => {display_cart();};
 
 function removeCart (code){
     update_total2();
+    let div_count = document.getElementById("count");
+    div_count.innerHTML = `<p>Vui lòng chọn sản phẩm trong giỏ hàng!</p>`;
+    let check = document.getElementById("check_all");
+    check.checked = false;
     if(typeof window.localStorage[code] !== "undefined"){
         window.localStorage.removeItem(code);      
         document.getElementById("CartDetail").getElementsByTagName('tbody')[0].innerHTML = "";
         display_cart();        
     }    
 }
+
